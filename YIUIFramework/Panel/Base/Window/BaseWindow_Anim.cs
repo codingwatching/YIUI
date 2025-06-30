@@ -11,7 +11,7 @@ namespace YIUIFramework
         {
             OnOpenTweenStart();
 
-            if (tween && !WindowBanRepetitionOpenTween || !m_FirstOpenTween)
+            if (tween && (!WindowBanRepetitionOpenTween || !m_FirstOpenTween))
             {
                 m_FirstOpenTween = true;
 
@@ -36,7 +36,7 @@ namespace YIUIFramework
         {
             OnCloseTweenStart();
 
-            if (tween && !WindowBanRepetitionCloseTween || !m_FirstCloseTween)
+            if (tween && (!WindowBanRepetitionCloseTween || !m_FirstCloseTween))
             {
                 m_FirstCloseTween = true;
 
